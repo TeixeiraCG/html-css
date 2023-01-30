@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens que se adaptam sozinhas</title>
+</head>
+<body>
+    <h1>Vamos testar imagem responsiva</h1>
+    <p>Esse é um teste de imagens</p>
+    <picture>
+        <source media="(max-width: 800px)" srcset="foto-p.png">
+        <source media="(max-width: 1050px)" srcset="foto-m.png">
+       <img src="foto-g.png" alt="foto flexivel"> 
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mp3">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <p>Infelizmente o seu navegar não consegue reproduzir áudio, <a href="midia/guanacast-33.mp3">baixe aqui</a>.</p>
+    </audio>
+</body>
+</html>
